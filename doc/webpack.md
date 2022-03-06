@@ -29,7 +29,10 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "./dist"),
         clean: true
-    }
+    },
+    devtool: "source-map",
+    mode: "development"
+}
 ```
 - require : node js 에서 외부 모듈을 가져오는 함수
 - require("path") : it provides utilities for working with file and directory paths
@@ -37,3 +40,5 @@ module.exports = {
 - __dirname : 현재 directory
 - path.resolve(__dirname, "./dist") : __dirname/dist
 - clean true : output directory 정리
+- devtool : "source-map" =>  빌드 시 소스를 난독화된 소스와 원본 소스 매핑
+- 
