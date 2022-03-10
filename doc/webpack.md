@@ -8,7 +8,7 @@ module bundler
 npm i -D webpack webpack-cli webpack-dev-server
 ```
 - npm i? : npm install
-- -D? : shorcut for '--save-dev'
+- -D? : shortcut for '--save-dev'
 - --save-dev? : package will appear in devDependencies
 - devDependencies? : 빌드시 포함 안됨
 - webpack-cli? : cli tool of webpack
@@ -41,4 +41,16 @@ module.exports = {
 - path.resolve(__dirname, "./dist") : __dirname/dist
 - clean true : output directory 정리
 - devtool : "source-map" =>  빌드 시 소스를 난독화된 소스와 원본 소스 매핑
-- 
+
+
+
+```
+npm i -D terser-webpack-plugin 
+```
+- -D? D = --save-dev
+- terser-webpack-plugin : javascript 코드 난독화, debugger 구문 제거
+
+```
+npx webpack
+```
+- npx : 
